@@ -37,6 +37,10 @@ app.get("/",(req:Request,rest:Response)=> {
     rest.send("Hola mundo api!");
 }) 
 
+app.get("/imc",(req:Request,rest:Response)=> {
+   rest.send("Hola mundo api get!");
+}) 
+
 app.post("/imc",(req:Request,rest:Response)=> {
     
     const peso:number = req.body.pesoKilogramos;
